@@ -1,6 +1,6 @@
 {
   "name": "pi-goal-with-auditor",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Fork of pi-goal with an independent completion auditor. The executor can no longer unilaterally mark a goal complete.",
   "keywords": [
     "pi",
