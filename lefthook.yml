@@ -7,6 +7,12 @@ pre-commit:
         - "src/**/*.ts"
         - "tsconfig.json"
 
+    test:
+      run: pnpm test
+      glob:
+        - "src/**/*.ts"
+        - "test/**/*.ts"
+
     build_dist:
       run: pnpm build && git add dist/index.js
       glob:

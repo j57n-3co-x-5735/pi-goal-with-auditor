@@ -1,4 +1,4 @@
-import type { SessionManager } from "@mariozechner/pi-coding-agent";
+import type { SessionManager } from "@earendil-works/pi-coding-agent";
 import { GoalState, GoalStateSchema } from "./goal_state";
 
 import { Value } from "typebox/value";

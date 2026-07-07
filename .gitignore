@@ -1,2 +1,8 @@
 node_modules/
 *.tsbuildinfo
+package-lock.json
+
+.env
+.env.*
+*.key
+*.pem
