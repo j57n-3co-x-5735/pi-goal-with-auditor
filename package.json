@@ -1,22 +1,24 @@
 {
-  "name": "pi-goal",
+  "name": "pi-goal-with-auditor",
   "version": "2.0.0",
-  "description": "Non-slop pi-goal implementation.",
+  "description": "Fork of pi-goal with an independent completion auditor. The executor can no longer unilaterally mark a goal complete.",
   "keywords": [
     "pi",
     "pi-package"
   ],
-  "private": true,
-  "homepage": "https://github.com/PurpleMyst/pi-goal#readme",
+  "homepage": "https://github.com/j57n-3co-x-5735/pi-goal-with-auditor#readme",
   "bugs": {
-    "url": "https://github.com/PurpleMyst/pi-goal/issues"
+    "url": "https://github.com/j57n-3co-x-5735/pi-goal-with-auditor/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PurpleMyst/pi-goal.git"
+    "url": "git+https://github.com/j57n-3co-x-5735/pi-goal-with-auditor.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "ISC",
-  "author": "PurpleMyst",
+  "author": "j57n-3co-x-5735",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
