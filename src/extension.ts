@@ -118,6 +118,7 @@ export default function (pi: ExtensionAPI) {
     label: "Get Current Goal",
     description:
       "Get the current active goal objective and status. Returns 'No active goal.' if none is set.",
+    promptSnippet: "Get the current active goal objective and status",
     parameters: Type.Object({}),
     // Forces any tool-call batch containing this tool to run sequentially, so it can never
     // observe stale state from a same-batch update_goal call that hasn't landed yet.
@@ -144,6 +145,8 @@ export default function (pi: ExtensionAPI) {
     label: "Update Goal Status",
     description:
       'Mark the current goal complete. An independent auditor will verify the objective is satisfied. Provide a completionSummary with concrete evidence of completion — the auditor uses it to evaluate your claim. Do not mark a goal complete merely because you are stopping work or the budget is running out — only mark it complete when the objective has actually been achieved and no required work remains.',
+    promptSnippet:
+      'Mark the current goal complete (status "complete"); an independent auditor verifies the claim against real workspace state',
     parameters: Type.Object({
       status: Type.Literal("complete"),
       completionSummary: Type.Optional(
